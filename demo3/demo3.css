@@ -14,3 +14,7 @@ body {
 .divBackground {
     background-color: #BFBFBF;
 }
+
+.biggerFontsize {
+    font-size: 2em;
+}
