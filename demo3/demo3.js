@@ -3,12 +3,24 @@ const app = new Vue({
     data: {
         message: "Testing some other v- directives:",
         toggle: true,
-        changingClass: 'divBackground',
     },
     methods: {
         set_toggle: function() {
             this.toggle = !this.toggle;
-            this.changingClass = 'biggerFontsize';
+        },
+        boundClasses: function() {
+            /*
+                To dynamically change styling you must return a JSON object with:
+                    css class names in quotes,
+                    true / false (or an expression evaluating to true / false) for if the class will be applied or not
+
+                note: this is one case where you do actually return a value,
+                    even though this function is a method
+            */
+            return {
+                'divBackground':(!this.toggle),
+                'biggerFontsize':(this.toggle)
+            }
         }
     },
     computed: {

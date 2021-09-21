@@ -14,18 +14,18 @@
         <h2 class="heading">Basic VueJS</h2>
         <div id="app">
             <p>{{message}}</p>
-            <!-- <div v-if="toggle" class="divBackground"> -->
-            <div v-if="toggle" v-bind:class="changingClass">
+            <div v-if="toggle" class="divBackground">
                 Now you see me!
             </div>
             <div v-if="otherToggle">
-            <!-- <div v-else> ex of v-else syntax -->
+            <!-- <div v-else> (ex of v-else syntax) -->
                 Now you don't!
+            </div>
+            <div v-bind:class="boundClasses()">
+                My styles can change dynamically!
             </div>
             <br />
             <button v-on:click="set_toggle">Toggle</button>
-            <!-- <input v-model="anotherVariable">
-            <img v-bind:src="urlHere" /> -->
         </div>
         <script src="demo3.js" ></script>
     </body>
