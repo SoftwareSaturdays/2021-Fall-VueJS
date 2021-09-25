@@ -15,12 +15,12 @@ Vue.component('child-component',{
     template: `
         <div>
             <p>This text comes in the middle</p>
-            <button v-on:click="send_event">Send event</button>
-            <button v-on:click="send_other">Send event</button>
+            <button v-on:click="send_press">Send press</button>
+            <button v-on:click="send_other">Send other</button>
         </div>
     `,
     methods: {
-        send_event: function() {
+        send_press: function() {
             this.$emit('press');
         },
         send_other: function() {
