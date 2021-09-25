@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Checkpoint 1</title>
+        <link rel="stylesheet" href="check1.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <h1 class="heading">Lesson 4, Demo 1</h1>
+        <h2 class="heading">More VueJS</h2>
+        <div id="app">
+            <!-- <p>This text uses only one HTML element, but appears repeated</p>
+            <ul>
+                <li v-for="item in list" v-bind:key="item.id">This element is: {{item.txt}}</li>
+            </ul> -->
+            <ul>
+                <li v-for="todo in todoList" v-bind:key="todo.id">
+                    {{todo.txt}}
+                </li>
+            </ul>
+
+            <input v-model="inputText"></input>
+            <button v-on:click="addTodo">Add todo</button>
+
+        </div>
+        <script src="check1.js" ></script>
+    </body>
+</html>
