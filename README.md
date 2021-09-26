@@ -8,19 +8,19 @@ We also are offering 2 tracks, beginner and intermediate. Beginner starts from t
 
 ## Lesson Plan (Beginner)
 
-1. **(Current) Week 1 introduces HTML and CSS. We cover basic HTML layout, HTML tags, and CSS properties.**
-2. Week 2 introduces JavaScript. We cover basic JavaScript and how to add it to a web page.
-3. Week 3 introduces VueJS. We cover basic formatting, the Vue instance, and v- directives.
-4. Week 4 introduces Vue components. We cover registering components, template strings, and custom events.
-5. Week 5 introduces NoSQL databases. We cover what NoSQL is, using Google [Firebase](https://firebase.google.com), and integrating databases with Vue.
+1. Week 1 introduces HTML and CSS. We cover basic HTML layout, HTML tags, and CSS properties. **(Lesson 1)**
+2. Week 2 introduces JavaScript. We cover basic JavaScript and how to add it to a web page. **(Lesson 2)**
+3. Week 3 introduces VueJS. We cover basic formatting, the Vue instance, and v- directives. **(Lesson 3)**
+4. Week 4 introduces Vue components. We cover registering components, template strings, and custom events. **(Lesson 4)**
+5. Week 5 introduces NoSQL databases. We cover what NoSQL is, using Google [Firebase](https://firebase.google.com), and integrating databases with Vue. **(Lesson 5)**
 
 ## Lesson Plan (Intermediate)
 
-1. **(Current) Week 1 introduces VueJS. We cover basic formatting, the Vue instance, and v- directives.**
-2. Week 2 introduces Vue components. We cover registering components, template strings, and custom events.
-3. Week 3 introduces NPM and Single File Components. We cover build chains and single file components.
-4. Week 4 introduces Vue Router. We cover routing, file organization, single page apps.
-5. Week 5 introduces NoSQL databases. We cover what NoSQL is, using Google [Firebase](https://firebase.google.com), and integrating databases with Vue.
+1. Week 1 introduces VueJS. We cover basic formatting, the Vue instance, and v- directives. **(Lesson 3)**
+2. Week 2 introduces Vue components. We cover registering components, template strings, and custom events. **(Lesson 4)**
+3. Week 3 introduces NPM and Single File Components. We cover build chains and single file components. **(Lesson 6)**
+4. Week 4 introduces Vue Router. We cover routing, file organization, single page apps. **(Lesson 7)**
+5. Week 5 introduces NoSQL databases. We cover what NoSQL is, using Google [Firebase](https://firebase.google.com), and integrating databases with Vue. **(Lesson 8)**
 
 ## Final Project
 

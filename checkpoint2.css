@@ -1,0 +1,15 @@
+html {
+    text-align: center;
+}
+
+h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#list {
+    color:green;
+}
+
+.task {
+    margin: 15px;
+}
