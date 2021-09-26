@@ -30,7 +30,7 @@ Participants are expected to implement proper CRUD principles in their program.
 # Using this repository
 
 Each weekly lesson contains several demonstration programs and checkpoints. The files for the current week can be found in the 'master' branch.
-The files for past lessons can be found in the branch for that lesson number. For the intermediate track, add 2 to the week number to get the lesson number.
+The files for past lessons can be found in the branch for that lesson number.
 
 # Contact
 
