@@ -9,11 +9,12 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body>
-        <h1 class="heading">Checkpoint 1 Example</h1>
+        <h1 class="heading">Checkpoint 2 Example</h1>
         <div id="app">
             <demo-component v-bind:click="click_count">
                 <child-component v-on:press="handle_press"></child-component>
             </demo-component>
+            <input-emit-component v-on:emit-data="handleTextEmit($event)"></input-emit-component>
         </div>
         <script src="check2.js" ></script>
     </body>

@@ -40,6 +40,32 @@ Vue.component('child-component',{
     }
 });
 
+Vue.component('input-emit-component',{
+    /*
+        What is being demonstrated here:
+            - you can emit to the vue instance what v-model captures, without needing any buttons to do it
+            - event listener methods can be passed more than just the event object
+    */
+
+    template: `
+        <div>
+            <input v-model="textForEmit" v-on:keyup="emitText(variableExample, 'string example', $event)"></input>
+        </div>
+    `,
+    data: function(){
+        return {
+            textForEmit: '',
+            variableExample: 'variable example',
+        }
+    },
+    methods: {
+        emitText: function(variableValue, stringValue, event) {
+            console.log(variableValue, stringValue, event);
+            this.$emit('emit-data', this.textForEmit);
+        },
+    }
+});
+
 
 const app = new Vue({
     el: '#app',
@@ -49,6 +75,9 @@ const app = new Vue({
     methods: {
         handle_press: function() {
             this.click_count++;
+        },
+        handleTextEmit: function(data) {
+            console.log('emitted data: ' + data);
         }
     }
 });
