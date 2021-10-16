@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <!-- <router-link :to="{name:'Demo2', params:{txt:'This data is passed in via HTML props'}}">Demo2</router-link>
+      <!-- <router-link v-bind:to="{name:'Demo2', params:{txt:'This data is passed in via HTML props'}}">Demo2</router-link>
       <br>
       <button v-on:click="run">Demo2</button> -->
     </div>
