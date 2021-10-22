@@ -25,7 +25,7 @@ const app = new Vue({
     data: {
         data_list: [],
     },
-    created: function() {
+    mounted: function() {
         database.ref('/').once('value').then((snap) => {
             for(let key in snap.val()) {
                 this.data_list.push({title:key, data:snap.val()[key]});
