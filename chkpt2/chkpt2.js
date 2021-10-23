@@ -23,7 +23,7 @@ Vue.component('database', {
 const app = new Vue({
     el: '#app',
     data: {
-        data_list: [],
+        data_list: [], // format: [ {title:data}, {title:data}, ... ]
     },
     mounted: function() {
         database.ref('/').once('value').then((snap) => {
