@@ -24,7 +24,15 @@ export default {
             }
 
             const dataRef = ref(database, '/added');
-            set(dataRef, data);
+            set(dataRef, data)
+            .then(() => {
+                console.log("Set was successful");
+            })
+            .catch((error) => {
+                console.log("Set failed");
+                console.log(error);
+            });
+
             console.log('-----------------')
             console.log('-----------------')
             console.log('-----------------')
@@ -44,9 +52,6 @@ export default {
                     }
                     console.log('-----------------')
                 }
-                console.log('-----------------')
-                console.log('-----------------')
-                console.log('-----------------')
             });
         },
         updateData() {
@@ -55,14 +60,30 @@ export default {
             }
 
             const dataRef = ref(database, '/added');
-            update(dataRef, data);
+            update(dataRef, data)
+            .then(() => {
+                console.log("Update was successful");
+            })
+            .catch((error) => {
+                console.log("Update failed");
+                console.log(error);
+            });
+
             console.log('-----------------')
             console.log('-----------------')
             console.log('-----------------')
         },
         deleteData() {
             const dataRef = ref(database, '/added');
-            remove(dataRef);
+            remove(dataRef)
+            .then(() => {
+                console.log("Remove was successful");
+            })
+            .catch((error) => {
+                console.log("Remove failed");
+                console.log(error);
+            });
+
             console.log('-----------------')
             console.log('-----------------')
             console.log('-----------------')
